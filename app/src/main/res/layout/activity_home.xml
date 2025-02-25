@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainColor"
+    tools:context=".presentation.home.HomeActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/score2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/db_btn_bg_green_gray"
+        android:elevation="20dp"
+        android:outlineSpotShadowColor="@color/white"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/coin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:src="@drawable/coin"
+        app:layout_constraintEnd_toStartOf="@id/score2"
+        app:layout_constraintStart_toStartOf="@id/score2"
+        app:layout_constraintTop_toTopOf="@id/score2" />
+
+    <LinearLayout
+        android:id="@+id/ll1_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/db_star_bg"
+        android:elevation="21dp"
+        app:layout_constraintBottom_toBottomOf="@id/iv3_2"
+        app:layout_constraintEnd_toEndOf="@id/iv2_2"
+        app:layout_constraintStart_toStartOf="@id/iv1_2"
+        app:layout_constraintTop_toTopOf="@id/iv1_2">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/level2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/star"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv1_2"
+        style="@style/image_style2"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@id/iv3_2"
+        app:layout_constraintEnd_toStartOf="@id/iv2_2"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/iv2_2"
+        style="@style/image_style2"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@id/iv4_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv1_2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/iv3_2"
+        style="@style/image_style2"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/iv4_2"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv1_2"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <ImageView
+        android:id="@+id/iv4_2"
+        style="@style/image_style2"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv3_2"
+        app:layout_constraintTop_toBottomOf="@id/iv2_2" />
+
+    <LinearLayout
+        android:id="@+id/startGame"
+        android:layout_width="228dp"
+        android:layout_height="60dp"
+        android:background="@drawable/db_splash_by_bg"
+        android:elevation="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/iv4_2"
+        app:layout_constraintEnd_toEndOf="@id/iv4_2"
+        app:layout_constraintStart_toStartOf="@id/iv1_2"
+        app:layout_constraintTop_toBottomOf="@id/iv4_2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        android:fontFamily="@font/amita_bold"
+        android:text="Играть"
+        android:textColor="#120B0B"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/startGame"
+        app:layout_constraintEnd_toEndOf="@id/startGame"
+        app:layout_constraintStart_toStartOf="@id/startGame"
+        app:layout_constraintTop_toTopOf="@id/startGame" />
+
+    <LinearLayout
+        android:id="@+id/results"
+        android:layout_width="128dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/db_splash_by_bg"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/settings"
+        app:layout_constraintEnd_toEndOf="@id/startGame"
+        app:layout_constraintStart_toStartOf="@id/startGame"
+        app:layout_constraintTop_toBottomOf="@id/startGame"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Результаты"
+            android:textColor="#120B0B" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settings"
+        android:layout_width="128dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/db_splash_by_bg"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/about_app"
+        app:layout_constraintEnd_toEndOf="@id/results"
+        app:layout_constraintStart_toStartOf="@id/results"
+        app:layout_constraintTop_toBottomOf="@id/results">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Настройки"
+            android:textColor="#120B0B" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/about_app"
+        android:layout_width="128dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/db_splash_by_bg"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/quit"
+        app:layout_constraintEnd_toEndOf="@id/settings"
+        app:layout_constraintStart_toStartOf="@id/settings"
+        app:layout_constraintTop_toBottomOf="@id/settings">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="О приложении"
+            android:textColor="#120B0B" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/quit"
+        android:layout_width="128dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/db_splash_by_bg"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/about_app"
+        app:layout_constraintStart_toStartOf="@id/about_app"
+        app:layout_constraintTop_toBottomOf="@id/about_app">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Выход"
+            android:textColor="#120B0B" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

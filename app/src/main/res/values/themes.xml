@@ -1,0 +1,10 @@
+<resources>
+
+    <style name="Base.Theme._4Фото1Слово" parent="Theme.Material3.DayNight.NoActionBar" />
+
+
+    <style name="Theme._4Фото1Слово" parent="Base.Theme._4Фото1Слово">
+        <item name="android:statusBarColor">@color/mainColor</item>
+        <item name="android:navigationBarColor">@color/mainColor</item>
+    </style>
+</resources>
